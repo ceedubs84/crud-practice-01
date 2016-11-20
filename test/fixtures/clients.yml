@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  injury: MyString
+  appointment_date: MyString
+
+two:
+  first_name: MyString
+  last_name: MyString
+  injury: MyString
+  appointment_date: MyString

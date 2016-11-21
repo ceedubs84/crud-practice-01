@@ -1,8 +1,14 @@
 <h1>Client Info</h1>
-  <h3>Name: <%= @client.first_name %></h3>
-  <h3>Surname: <%= @client.last_name %></h3>
-  <h3>Injury: <%= @client.injury %></h3>
-  <h3>Appointment: <%= @client.appointment_date %></h3>
+  <div class="row">
+    <div class="col-md-8">
+      <h3>Name: <%= @client.first_name %></h3>
+      <h3>Surname: <%= @client.last_name %></h3>
+    </div>
+    <div class="col-md-4">
+      <h3>Injury: <%= @client.injury %></h3>
+      <h3>Appointment: <%= @client.appointment_date %></h3>
+    </div>
+  </div>  
 
 <div>
   <a href="/clients/<%= @client.id %>/edit">Edit Client</a>

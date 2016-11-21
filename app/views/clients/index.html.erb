@@ -1,6 +1,6 @@
 <h1>Clients</h1>
 <% @clients.each do |client| %>
-  <h3>Name: <%= client.first_name %></h3>
+  <a href="/clients/<%= client.id %>"><h3>Name: <%= client.first_name %></h3></a>
   <h3>Surname: <%= client.last_name %></h3>
   <h3>Injury: <%= client.injury %></h3>
   <h3>Appointment: <%= client.appointment_date %></h3>

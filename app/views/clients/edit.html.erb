@@ -1,20 +1,24 @@
 <h3>Edit Client</h3>
-<%= form_tag '/clients/#{client_id}', method: :patch do %>
+<%= form_tag "/clients/#{@client.id}", method: :patch do %>
   <div>
     <%= label_tag :first_name %>
-    <%= text_field_tag :first_name, nil, class: 'form-control' %>
+    <%= text_field_tag :first_name, @client.first_name, class: 'form-control' %>
   </div>
   <div>
     <%= label_tag :last_name %>
-    <%= text_field_tag :last_name, nil, class: 'form-control' %>
+    <%= text_field_tag :last_name, @client.last_name, class: 'form-control' %>
   </div>
   <div>
     <%= label_tag :injury %>
-    <%= text_field_tag :injury, nil, class: 'form-control' %>
+    <%= text_field_tag :injury, @client.injury, class: 'form-control' %>
   </div>
   <div>
     <%= label_tag :appointment_date %>
-    <%= text_field_tag :appointment_date, nil, class: 'form-control' %>
+    <%= text_field_tag :appointment_date, @client.appointment_date, class: 'form-control' %>
   </div>
   <%= submit_tag "Update Client", class: 'btn btn-primary' %>
 <% end %>
+
+<div>
+  <a href="/clients">Back to Home</a>
+</div>

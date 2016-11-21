@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get '/clients/new' => 'clients#new'
   post '/clients' => 'clients#create'
   get '/clients/:id' => 'clients#show'
-  patch '/clients/:id/edit' => 'clients#edit'
-  get '/clients/:id' => 'clients#update'
+  get '/clients/:id/edit' => 'clients#edit'
+  patch '/clients/:id' => 'clients#update'
   delete '/clients/:id' => 'clients#destroy'
 end

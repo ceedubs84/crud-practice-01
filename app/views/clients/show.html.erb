@@ -5,5 +5,11 @@
   <h3>Appointment: <%= @client.appointment_date %></h3>
 
 <div>
+  <a href="/clients/<%= @client.id %>/edit">Edit Client</a>
+</div>
+<div>
   <a href="/clients">Back to Home</a>
+</div>
+<div>
+  <%= link_to "Erase Client?", "/clients/#{@client.id}", method: :delete %>
 </div>
